@@ -36,60 +36,67 @@
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <Component id="radioLB" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
                               <Component id="radioTF" min="-2" pref="161" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel5" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
-                                  <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="suavidadTF" min="-2" pref="161" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="areaTF" alignment="1" min="-2" pref="161" max="-2" attributes="0"/>
-                                  <Component id="perimetroTF" alignment="1" min="-2" pref="161" max="-2" attributes="0"/>
-                                  <Component id="texturaTF" alignment="1" min="-2" pref="161" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel5" alignment="0" min="-2" pref="41" max="-2" attributes="0"/>
+                                      <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="areaTF" alignment="1" min="-2" pref="161" max="-2" attributes="0"/>
+                                      <Component id="perimetroTF" alignment="1" min="-2" pref="161" max="-2" attributes="0"/>
+                                      <Component id="texturaTF" alignment="1" min="-2" pref="161" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
-                              <Component id="suavidadTF" min="-2" pref="161" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace min="43" pref="43" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="puntConTF" min="-2" pref="161" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace pref="29" max="32767" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
+                          <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="dimFracTF" min="-2" pref="161" max="-2" attributes="0"/>
-                                  <Component id="compacidadTF" alignment="0" min="-2" pref="161" max="-2" attributes="0"/>
-                                  <Component id="concavidadTF" min="-2" pref="161" max="-2" attributes="0"/>
-                                  <Component id="simetriaTF" alignment="0" min="-2" pref="161" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      <Component id="compacidadTF" min="-2" pref="161" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="concavidadTF" min="-2" pref="161" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="puntConTF" min="-2" pref="161" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="simetriaTF" min="-2" pref="161" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
                           </Group>
                       </Group>
+                      <EmptySpace pref="28" max="32767" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -218,51 +225,81 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="perimetroTF">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="122.8"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="perimetroTFActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="radioTF">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="17.99"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="radioTFActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="dimFracTF">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0.07871"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="dimFracTFActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="suavidadTF">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0.1184"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="suavidadTFActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="areaTF">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="1001"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="areaTFActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="texturaTF">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="10.38"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="texturaTFActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="concavidadTF">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0.3001"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="concavidadTFActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="compacidadTF">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0.2776"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="compacidadTFActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="puntConTF">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0.1471"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="puntConTFActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="simetriaTF">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0.2419"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="simetriaTFActionPerformed"/>
       </Events>
