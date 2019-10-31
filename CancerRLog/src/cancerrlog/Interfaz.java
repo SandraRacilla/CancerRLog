@@ -372,7 +372,7 @@ public class Interfaz extends javax.swing.JFrame {
                     (68.33703*dimFractal));
             
             pronostico = (float) (1/(1+(Math.exp(-reg_lineal))));
-            String resultado = pronostico>0.5? "1":"0";
+            String resultado = pronostico>0.5? "Benigno":"Maligno";
             diagnosticoTF.setText(resultado);
         }
        catch(NumberFormatException nfe){ 
@@ -402,7 +402,7 @@ public class Interfaz extends javax.swing.JFrame {
                     (-18.7889*simetria)+(42.1642*dimFractal));
             
             pronostico = (float) (1/(1+(Math.exp(-reg_lineal))));
-            String resultado = pronostico>0.5? "1":"0";
+            String resultado = pronostico>0.5? "Benigno":"Maligno";
             diagnosticoTF.setText(resultado);
         }
        catch(NumberFormatException nfe){ 
