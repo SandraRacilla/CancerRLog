@@ -15,7 +15,8 @@ public class CancerRLog {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+        Interfaz interfaz = new Interfaz();
+        interfaz.setVisible(true);
     }
     
 }

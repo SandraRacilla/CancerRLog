@@ -5,6 +5,8 @@
  */
 package cancerrlog;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author sandy
@@ -139,6 +141,7 @@ public class Interfaz extends javax.swing.JFrame {
             }
         });
 
+        diagnosticoTF.setEditable(false);
         diagnosticoTF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 diagnosticoTFActionPerformed(evt);
@@ -319,16 +322,29 @@ public class Interfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_idTFActionPerformed
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-       float radio=Float.valueOf(radioTF.getText());
-       float textura=Float.valueOf(texturaTF.getText());
-       float perimetro=Float.valueOf(perimetroTF.getText());
-       float area=Float.valueOf(areaTF.getText());
-       float suavidad=Float.valueOf(suavidadTF.getText());
-       float compacidad=Float.valueOf(compacidadTF.getText());
-       float concavidad=Float.valueOf(concavidadTF.getText());
-       float puntConcavos=Float.valueOf(puntConTF.getText());
-       float simetria=Float.valueOf(simetriaTF.getText());
-       float dimFractal=Float.valueOf(dimFracTF.getText());
+        float radio,textura,perimetro,area,suavidad,compacidad,concavidad,
+            puntConcavos,simetria,dimFractal,pronostico;
+        try{
+            radio=Float.valueOf(radioTF.getText());
+            textura=Float.valueOf(texturaTF.getText());
+            perimetro=Float.valueOf(perimetroTF.getText());
+            area=Float.valueOf(areaTF.getText());
+            suavidad=Float.valueOf(suavidadTF.getText());
+            compacidad=Float.valueOf(compacidadTF.getText());
+            concavidad=Float.valueOf(concavidadTF.getText());
+            puntConcavos=Float.valueOf(puntConTF.getText());
+            simetria=Float.valueOf(simetriaTF.getText());
+            dimFractal=Float.valueOf(dimFracTF.getText());
+            
+            pronostico=radio+textura;
+            
+            diagnosticoTF.setText(Float.toString(pronostico));
+        }
+       catch(NumberFormatException nfe){ 
+           JOptionPane.showMessageDialog(null,
+                "Revisa que el formato de los datos sea válido");
+       }
+       
     }//GEN-LAST:event_jButton1MouseClicked
 
     /**
