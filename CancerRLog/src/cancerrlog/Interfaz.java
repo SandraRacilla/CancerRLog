@@ -53,7 +53,8 @@ public class Interfaz extends javax.swing.JFrame {
         simetriaTF = new javax.swing.JTextField();
         diagnosticoTF = new javax.swing.JTextField();
         idTF = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        pronosticoCompletoBTN = new javax.swing.JButton();
+        pronosticoReducidoBTN = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -164,10 +165,17 @@ public class Interfaz extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("Pronosticar");
-        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+        pronosticoCompletoBTN.setText("Pronosticar usando todas las variables");
+        pronosticoCompletoBTN.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton1MouseClicked(evt);
+                pronosticoCompletoBTNMouseClicked(evt);
+            }
+        });
+
+        pronosticoReducidoBTN.setText("Pronosticar con dimensionalidad reducida");
+        pronosticoReducidoBTN.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                pronosticoReducidoBTNMouseClicked(evt);
             }
         });
 
@@ -179,12 +187,9 @@ public class Interfaz extends javax.swing.JFrame {
                 .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(29, 29, 29)
-                        .addComponent(jButton1)
-                        .addGap(58, 58, 58)
-                        .addComponent(jLabel12)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(diagnosticoTF, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(idTF, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -231,22 +236,29 @@ public class Interfaz extends javax.swing.JFrame {
                                         .addComponent(jLabel10)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(simetriaTF, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                        .addContainerGap(28, Short.MAX_VALUE))))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addGroup(layout.createSequentialGroup()
-                .addGap(98, 98, 98)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(idTF, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(183, 183, 183)
+                        .addComponent(jLabel12)
+                        .addGap(25, 25, 25)
+                        .addComponent(diagnosticoTF, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(164, 164, 164)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(pronosticoReducidoBTN, javax.swing.GroupLayout.DEFAULT_SIZE, 286, Short.MAX_VALUE)
+                            .addComponent(pronosticoCompletoBTN, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(24, 24, 24)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(idTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
+                .addGap(29, 29, 29)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(radioTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(radioLB)
@@ -276,12 +288,15 @@ public class Interfaz extends javax.swing.JFrame {
                     .addComponent(suavidadTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(dimFracTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel11))
-                .addGap(90, 90, 90)
+                .addGap(26, 26, 26)
+                .addComponent(pronosticoCompletoBTN)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(pronosticoReducidoBTN)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel12)
-                    .addComponent(diagnosticoTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1))
-                .addGap(26, 26, 26))
+                    .addComponent(diagnosticoTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, 23))
         );
 
         pack();
@@ -335,7 +350,7 @@ public class Interfaz extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_idTFActionPerformed
 
-    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+    private void pronosticoCompletoBTNMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pronosticoCompletoBTNMouseClicked
         float radio,textura,perimetro,area,suavidad,compacidad,concavidad,
             puntConcavos,simetria,dimFractal,reg_lineal,pronostico;
         try{
@@ -365,7 +380,36 @@ public class Interfaz extends javax.swing.JFrame {
                 "Revisa que el formato de los datos sea válido");
        }
        
-    }//GEN-LAST:event_jButton1MouseClicked
+    }//GEN-LAST:event_pronosticoCompletoBTNMouseClicked
+
+    private void pronosticoReducidoBTNMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pronosticoReducidoBTNMouseClicked
+        float radio,textura,perimetro,area,suavidad,compacidad,concavidad,
+            puntConcavos,simetria,dimFractal,reg_lineal,pronostico;
+        try{
+            radio=Float.valueOf(radioTF.getText());
+            textura=Float.valueOf(texturaTF.getText());
+            perimetro=Float.valueOf(perimetroTF.getText());
+            area=Float.valueOf(areaTF.getText());
+            suavidad=Float.valueOf(suavidadTF.getText());
+            compacidad=Float.valueOf(compacidadTF.getText());
+            concavidad=Float.valueOf(concavidadTF.getText());
+            puntConcavos=Float.valueOf(puntConTF.getText());
+            simetria=Float.valueOf(simetriaTF.getText());
+            dimFractal=Float.valueOf(dimFracTF.getText());
+            
+            reg_lineal=(float) (28.5761+(-0.8238*radio)+(-0.3680*textura)+
+                    (-45.6544*suavidad)+(-80.0723*puntConcavos)+
+                    (-18.7889*simetria)+(42.1642*dimFractal));
+            
+            pronostico = (float) (1/(1+(Math.exp(-reg_lineal))));
+            String resultado = pronostico>0.5? "1":"0";
+            diagnosticoTF.setText(resultado);
+        }
+       catch(NumberFormatException nfe){ 
+           JOptionPane.showMessageDialog(null,
+                "Revisa que el formato de los datos sea válido");
+       }
+    }//GEN-LAST:event_pronosticoReducidoBTNMouseClicked
 
     /**
      * @param args the command line arguments
@@ -409,7 +453,6 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JTextField diagnosticoTF;
     private javax.swing.JTextField dimFracTF;
     private javax.swing.JTextField idTF;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -422,6 +465,8 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JTextField perimetroTF;
+    private javax.swing.JButton pronosticoCompletoBTN;
+    private javax.swing.JButton pronosticoReducidoBTN;
     private javax.swing.JTextField puntConTF;
     private javax.swing.JLabel radioLB;
     private javax.swing.JTextField radioTF;
